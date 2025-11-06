@@ -1,0 +1,151 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+/* HERO */
+.terms-hero {
+   cursor: default;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  padding-top: 96px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(120deg, #0A84FF 0%, #4fc3ff 50%, #e0f2ff 100%);
+  overflow: hidden;
+}
+
+.terms-hero h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.terms-hero p {
+  font-size: 20px;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 40px;
+}
+
+.updated {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* GRID */
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 120px 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.term-card {
+    cursor: default;
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(10,132,255,0.15);
+  transition: all 0.35s ease;
+  text-align: left;
+}
+
+.term-card:hover {
+  transform: translateY(-8px) rotate(3deg) scale(1.025);
+  box-shadow: 0 14px 35px rgba(10,132,255,0.15);
+}
+
+.term-card i {
+  font-size: 34px;
+  color: #0A84FF;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.term-card h2 {
+  color: #0A84FF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.term-card p {
+  color: #444;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.term-card a {
+  color: #0A84FF;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.term-card a:hover {
+  text-decoration: none;
+}
+
+/* CTA */
+.terms-cta {
+  text-align: center;
+  background: linear-gradient(120deg, #0A84FF 0%, #4fc3ff 50%, #9cd4fd 100%);
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.terms-cta h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.terms-cta p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.terms-cta a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.terms-cta a:link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.terms-cta a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.terms-cta a:hover {
+    color: #c6e2ff;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .terms-hero h1 {
+    font-size: 36px;
+  }
+  .term-card {
+    padding: 30px 25px;
+  }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduventure - VR Learning</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="index.html"><img src="images/EduVentureIconTransparent.png" alt="Eduventure Logo" class="logo-img"></a>
+        <span class="nav-logo">Eduventure</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-buttons">
+        <a href="contact.html?reason=product"><button class="btn-primary"><i class="ri-goggles-line"></i> Get
+            Eduventure</button></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (full-screen background) -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Transform Learning with<br>Virtual Reality</h1>
+        <p>Eduventure brings immersive VR experiences to schools.<br>Explore virtual labs, take field trips through
+          history, and make learning unforgettable.</p>
+
+        <div class="hero-buttons">
+          <a href="product.html"><button class="btn-primary"><i class="ri-goggles-line"></i> View Product</button></a>
+          <a href="about.html"><button class="btn-outline"><i class="ri-information-line"></i> Learn More</button></a>
+        </div>
+      </div>
+      <!-- scroll-down indicator -->
+      <a href="#experiences" class="scroll-down">
+        <span class="scroll-text">Scroll down</span>
+        <span class="scroll-circle">
+          <span class="scroll-arrow"><i class="ri-arrow-down-long-line"></i></span>
+        </span>
+      </a>
+    </section>
+
+
+    <!-- IMMERSIVE EXPERIENCES -->
+    <section class="section" id="experiences">
+      <h2>Immersive Learning Experiences</h2>
+
+      <div class="grid">
+        <div class="card experience-card">
+          <div class="icon-circle">
+            🧪
+          </div>
+          <h3>Virtual Science Labs</h3>
+          <p>Perform real experiments safely inside immersive VR environments.</p>
+        </div>
+
+        <div class="card experience-card">
+          <div class="icon-circle">
+            🏛️
+          </div>
+          <h3>Historic Time Travel</h3>
+          <p>Visit ancient civilizations and witness historic events up close.</p>
+        </div>
+
+        <div class="card experience-card">
+          <div class="icon-circle">
+            ⚙️
+          </div>
+          <h3>Engineering Worlds</h3>
+          <p>Build structures, design machines, and explore STEM concepts in 3D.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHY SCHOOLS CHOOSE US -->
+    <section class="section alt-bg">
+      <h2>Why Schools Choose Eduventure</h2>
+
+      <div class="grid narrow">
+        <div class="card reason-card">
+          <div class="icon-circle">
+            🚀
+          </div>
+          <h3>Higher Engagement</h3>
+          <p>Students participate actively and retain more knowledge.</p>
+        </div>
+
+        <div class="card reason-card">
+          <div class="icon-circle">
+            🎓
+          </div>
+          <h3>Hands-On Learning</h3>
+          <p>Practice and apply real skills inside virtual environments.</p>
+        </div>
+
+        <div class="card reason-card">
+          <div class="icon-circle">
+            💸
+          </div>
+          <h3>Affordable VR</h3>
+          <p>Built for standalone VR headsets, no high-end PCs needed.</p>
+        </div>
+
+        <div class="card reason-card">
+          <div class="icon-circle">
+            📊
+          </div>
+          <h3>Teacher Control</h3>
+          <p>Monitor progress, assign lessons, and guide learning live.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- LAUNCH GALLERY -->
+    <section class="section gallery-section">
+      <h2>Our Launch</h2>
+      <div class="gallery">
+        <div class="gallery-item"><img
+            src="images\EduVentureBlogs\1\WhatsApp Image 2025-03-06 at 22.00.17_a9c3ad31.jpg">
+        </div>
+        <div class="gallery-item"><img
+            src="images\EduVentureBlogs\1\WhatsApp Image 2025-03-06 at 22.00.18_63c73d3e.jpg">
+        </div>
+        <div class="gallery-item"><img
+            src="images\EduVentureBlogs\1\WhatsApp Image 2025-03-06 at 22.00.19_87778ed4.jpg">
+        </div>
+        <div class="gallery-item"><img
+            src="images\EduVentureBlogs\1\WhatsApp Image 2025-03-06 at 22.00.21_5c6752c0.jpg">
+        </div>
+        <div class="gallery-item"><img
+            src="images\EduVentureBlogs\1\WhatsApp Image 2025-03-06 at 22.00.25_6e23caf3.jpg">
+        </div>
+        <div class="gallery-item"><img
+            src="images\EduVentureBlogs\1\WhatsApp Image 2025-03-06 at 23.17.24_25723c36.jpg">
+        </div>
+      </div>
+    </section>
+
+    <!-- fullscreen modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close"><i class="ri-close-large-line"></i></span>
+      <img class="lightbox-img" id="lightbox-img">
+    </div>
+
+
+    <!-- CTA -->
+    <section class="cta-box">
+      <div class="cta-inner">
+        <h2>Ready to Transform Your Classroom?</h2>
+        <p>Bring immersive VR learning to your school and empower students through hands-on exploration.</p>
+
+        <div class="cta-buttons">
+          <a href="product.html"><button class="btn-primary large-btn">See Our Product<i
+                class="ri-arrow-right-long-line"></i></button></a></i>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+
+      <div>
+        <a href="index.html">
+          <h3 class="logo">Eduventure</h3>
+        </a>
+        <p>Transforming education with<br>Virtual Reality.</p>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a href="product.html#whatsnew">Features</a><br>
+        <a href="contact.html?reason=demo">Request Demo</a><br>
+        <a href="contact.html?reason=product">Get Eduventure</a><br>
+        <a href="product.html#hero">Our Project</a><br>
+        <a href="product.html#roadmap">Our Roadmap</a><br>
+        <a href="contact.html?reason=support">Support</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a><br>
+        <a href="terms.html">Terms of Service</a><br>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <i class="ri-mail-line"></i> <a href="mailto:contact@myeduventure.com">contact@myeduventure.com</a>
+        <br>
+        <i class="ri-phone-line"></i> <a href="tel:+96103757332">+961 03 757 322</a>
+      </div>
+
+    </div>
+
+    <p class="footer-copy"><i class="ri-copyright-line"></i> 2025 Eduventure. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+
+</html>
