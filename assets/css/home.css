@@ -1,8 +1,8 @@
-/* HERO */
+/* === HERO === */
 .hero {
   cursor: default;
   height: 100vh;
-  background-image: url("../../images/vr-hero.jpg"); /* change filename if needed */
+  background-image: url("../../images/vr-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,18 +13,19 @@
   text-align: center;
   padding: 0 20px;
 }
-/* Slight dark overlay so text isn't washed out */
+
+/* Overlay */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.35); 
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(2px);
 }
 
-/* Text stays on top */
+/* Text */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -49,9 +50,10 @@
   display: flex;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-/*Scroll Arrow*/
+/* === Scroll Down Indicator === */
 .scroll-down {
   position: absolute;
   bottom: 50px;
@@ -71,7 +73,7 @@
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .scroll-circle {
@@ -101,7 +103,7 @@
   color: #ffffff;
 }
 
-/* Animations */
+/* === Animations === */
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
   70% { box-shadow: 0 0 0 15px rgba(10,132,255,0); }
@@ -117,4 +119,65 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translate(-50%, 15px); }
   to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* === RESPONSIVE STYLES === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  .hero-content p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 14px;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .scroll-down {
+    bottom: 30px;
+  }
+
+  .scroll-circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  .scroll-text {
+    font-size: 12px;
+  }
 }

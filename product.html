@@ -9,19 +9,27 @@
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/product.css">
   <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/responsive-product.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- HEADER -->
+  <div id="menu-overlay"></div>
   <header class="navbar">
     <div class="nav-container">
       <div class="logo-container">
         <a href="index.html"><img src="images/EduVentureIconTransparent.png" alt="Eduventure Logo" class="logo-img"></a>
         <span class="nav-logo">Eduventure</span>
       </div>
-
-      <nav class="nav-links">
+      <!-- Hamburger icon -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="product.html" class="active">Product</a>
         <a href="about.html">About</a>
@@ -37,7 +45,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="product-hero-bg" id="hero">
+    <section class="product-hero-bg mobile-hide" id="hero">
       <section class="product-hero left-align">
         <div class="grain"></div>
 
@@ -69,6 +77,24 @@
         </div>
       </section>
     </section>
+
+    <!--Mobile Hero-->
+    <section class="product-hero-bg mobile-show">
+      <section class="product-hero mobile-show">
+        <img src="images/EduVentureIconTransparent.png" alt="Eduventure icon" class="app-icon">
+        <h1>Eduventure</h1>
+        <p class="subtext">Immersive VR learning experience for schools</p>
+        <div class="hero-actions">
+          <div class="hero-left-buttons">
+            <a href="#partner"><button class="btn-primary big-btn"><i class="ri-goggles-line"></i> Get
+                Eduventure</button></a>
+            <a href="#editions"><button class="btn-outline-black big-btn"><i class="ri-arrow-down-line"></i> See Our
+                Project</button></a>
+          </div>
+        </div>
+      </section>
+    </section>
+
 
     <!-- EDITIONS -->
     <section id="editions" class="section left-align alt-bg">
@@ -264,7 +290,7 @@
     </section>
 
     <!-- Roadmap -->
-    <section class="section alt-bg" id="roadmap" style="padding-bottom: 200px;">
+    <section class="section alt-bg" id="roadmap">
       <h2>Project Roadmap</h2>
       <ul class="timeline">
 
@@ -373,8 +399,10 @@
       <div class="cta-inner">
         <h2>Ready to Try Eduventure?</h2>
         <p>Join schools shaping the future of immersive learning.</p>
-        <a href="contact.html?reason=product"><button class="btn-primary large-btn"><i class="ri-goggles-line"></i> Get EduVenture</button></a>
-        <a href="contact.html?reason=demo"><button class="btn-outline large-btn">Request Demo <i class="ri-arrow-right-long-line"></i></button></a>
+        <a href="contact.html?reason=product"><button class="btn-primary large-btn"><i class="ri-goggles-line"></i> Get
+            EduVenture</button></a>
+        <a href="contact.html?reason=demo"><button class="btn-outline large-btn">Request Demo <i
+              class="ri-arrow-right-long-line"></i></button></a>
       </div>
     </section>
   </main>

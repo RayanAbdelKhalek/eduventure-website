@@ -1,0 +1,288 @@
+/* ===== PRODUCT PAGE RESPONSIVE FIXES ===== */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .product-hero {
+    padding-top: 160px;
+    padding-bottom: 120px;
+  }
+
+  .product-hero h1 {
+    font-size: 40px;
+  }
+
+  .product-hero .subtext {
+    font-size: 16px;
+    max-width: 600px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero-left-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .edition-list {
+    justify-content: center;
+  }
+
+  .wn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .product-hero {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    padding-inline: 20px;
+  }
+
+  .product-hero h1 {
+    font-size: 34px;
+  }
+
+  .product-hero .subtext {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: wrap;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .hero-left-buttons {
+    flex-direction: wrap;
+    align-items: left;
+    gap: 12px;
+  }
+
+  .big-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .edition-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edition-card {
+    width: 90%;
+  }
+
+  .wn-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .wn-tab {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+
+  .wn-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+
+  /* hero container */
+  .product-hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* optional app icon */
+  .product-hero .app-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 22%;
+    margin: 0 auto 18px;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    object-fit: cover;
+  }
+
+  /* title + tagline */
+  .product-hero h1 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .product-hero .subtext {
+    font-size: 15px;
+    color: #555;
+    margin: 0 auto 24px;
+    max-width: 85%;
+  }
+
+  /* buttons stacked and centered */
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .hero-left-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .big-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    font-size: 15px;
+    padding: 14px 24px;
+  }
+
+  .edition-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .edition-card {
+    width: 95%;
+    padding: 22px;
+  }
+
+  .edition-card h3 {
+    font-size: 18px;
+  }
+
+  .edition-card p {
+    font-size: 14px;
+  }
+
+  .edition-features span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .wn-tabs {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .wn-tab {
+    width: 90%;
+    text-align: center;
+  }
+
+  .wn-grid {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+  }
+
+  .wn-card {
+    padding: 20px;
+  }
+
+  /* Roadmap Timeline Fix */
+  .timeline::before {
+    left: 12px;
+    width: 2px;
+  }
+
+.timeline{
+    margin-bottom: 0px;
+}
+
+  .timeline .circle {
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  .direction-l,
+  .direction-r {
+    width: calc(100% - 50px);
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .flag {
+    font-size: 16px;
+  }
+
+  .time {
+    font-size: 11px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .product-hero {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .product-hero h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .product-hero .subtext {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .edition-card {
+    padding: 18px;
+  }
+
+  .edition-card h3 {
+    font-size: 17px;
+  }
+
+  .edition-features span {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .wn-card {
+    padding: 16px;
+  }
+
+  .flag {
+    font-size: 15px;
+  }
+
+  .time {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .wn-tab {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}

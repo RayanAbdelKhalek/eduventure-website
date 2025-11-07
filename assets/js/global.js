@@ -31,3 +31,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+const overlay = document.querySelector('#menu-overlay');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle("active");
+  overlay.classList.toggle("active");
+  navLinks.classList.toggle("open");
+});
+
+// Optional: close menu when overlay is clicked
+overlay.addEventListener('click', () => {
+  menuToggle.classList.toggle("active");
+  navLinks.classList.remove('open');
+  overlay.classList.remove('active');
+});
+
