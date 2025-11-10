@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #0A84FF 0%, #4fc3ff 50%, #e0f2ff 100%);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.error-container {
+  background: rgba(163, 163, 163, 0.15);
+  border-radius: 24px;
+  padding: 60px 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 90%;
+}
+
+.error-content h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -4px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.error-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: white;
+  color: #0A84FF;
+}
+
+.btn-primary:hover {
+  background: #f5f9ff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(10,132,255,0.25);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .error-content h1 {
+    font-size: 70px;
+  }
+  .error-container {
+    padding: 40px 24px;
+  }
+}

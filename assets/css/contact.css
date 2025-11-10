@@ -119,20 +119,3 @@ input:focus, select:focus, textarea:focus {
   border-color: #0A84FF;
   box-shadow: 0 0 6px rgba(10,132,255,0.2);
 }
-
-.btn-primary {
-  background: linear-gradient(90deg, #007bff, #0A84FF);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 14px 22px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(10,132,255,0.25);
-}

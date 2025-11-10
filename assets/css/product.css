@@ -355,6 +355,39 @@
   margin-left: 10px;
 }
 
+.time.passed {
+  display: inline-block;
+  background: rgba(0, 255, 0, 0.3);
+  border: 1px solid rgb(0, 151, 0);
+  color: #149500;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.time.current {
+  display: inline-block;
+  background: linear-gradient(130deg, #0A84FF 0%, #2e96ff 70%, #0a75e1 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.time.planned {
+  display: inline-block;
+  background: rgba(255,200,70,0.18);
+  color: #b97d00;
+  border: 1px solid #b97d00;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
 .desc {
   margin-top: 10px;
   color: #333;
