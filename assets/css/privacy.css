@@ -7,7 +7,7 @@ body {
 
 /* HERO */
 .privacy-hero {
-  cursor: default;
+  
   position: relative;
   height: 70vh;
   display: flex;
@@ -50,7 +50,7 @@ body {
 }
 
 .privacy-card {
-    cursor: default;
+    
   background: #fff;
   border-radius: 18px;
   padding: 40px 30px;
@@ -96,7 +96,7 @@ body {
 
 /* CTA */
 .privacy-cta {
-    cursor: default;
+    
   text-align: center;
   background: linear-gradient(120deg, #0A84FF 0%, #4fc3ff 50%, #9cd4fd 100%);
   color: #fff;

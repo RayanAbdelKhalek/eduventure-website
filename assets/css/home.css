@@ -1,6 +1,6 @@
 /* === HERO === */
 .hero {
-  cursor: default;
+  
   height: 100vh;
   background-image: url("../../images/webp/vr-hero.webp");
   background-size: cover;
@@ -118,6 +118,56 @@
   from { opacity: 0; transform: translate(-50%, 15px); }
   to { opacity: 1; transform: translate(-50%, 0); }
 }
+
+/* PARTNERS SECTION */
+.partners {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.partners .subtitle {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-item {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 14px;
+  border: 1px solid #d9e9ff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(10,132,255,0.1);
+  border: 1px solid #e8e8e8;
+}
+
+.logo-item img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.logo-item:hover img {
+  filter: grayscale(0%);
+}
+
 
 /* === RESPONSIVE STYLES === */
 

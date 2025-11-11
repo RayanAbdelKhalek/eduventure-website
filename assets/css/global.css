@@ -7,6 +7,7 @@ html {
 body {
   background: #fff;
   color: #333;
+  user-select: none;
 }
 
 body {
@@ -112,21 +113,17 @@ a:hover{
   padding: 140px 30px; text-align: center;
 }
 .section h1 {
-  cursor: default;
   font-size: 48px;
   margin-bottom: 15px;
 }
 .section h2 {
-  cursor: default;
   font-size: 36px;
   margin-bottom: 30px;
 }
 .section h3 {
-  cursor: default;
   font-size: 26px;
 }
 .section .subtext{
-  cursor: default;
   font-size: 20px;
   color: #00000072;
 }
@@ -232,14 +229,12 @@ a:hover{
 }
 
 .cta-inner h2 {
-  cursor: default;
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 12px;
 }
 
 .cta-inner p {
-  cursor: default;
   font-size: 18px;
   margin-bottom: 30px;
   color: #eef7ff;
@@ -272,7 +267,6 @@ a:hover{
 .grid.narrow { grid-template-columns: repeat(4, 1fr); }
 
 .card {
-  cursor: default;
   padding: 40px; background: #fff; border: 1px solid #e8e8e8;
   border-radius: 16px; font-size: 18px; font-weight: 600;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
@@ -348,7 +342,6 @@ a:hover{
 
 /* FOOTER */
 .footer {
-  cursor: default;
   padding: 60px 30px;
   background: #fff;
   border-top: 1px solid #ddd;

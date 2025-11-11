@@ -7,7 +7,7 @@ body {
 
 /* HERO */
 .terms-hero {
-   cursor: default;
+   
   position: relative;
   height: 70vh;
   display: flex;
@@ -50,7 +50,7 @@ body {
 }
 
 .term-card {
-    cursor: default;
+    
   background: #fff;
   border-radius: 18px;
   padding: 40px 30px;

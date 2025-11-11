@@ -7,7 +7,7 @@ body {
 
 /* HERO */
 .faq-hero {
-    cursor: default;
+    
   position: relative;
   height: 70vh;
   display: flex;
@@ -110,7 +110,7 @@ body {
 
 /* CTA */
 .faq-cta {
-    cursor: default;
+    
   text-align: center;
   background: linear-gradient(120deg, #0A84FF 0%, #4fc3ff 50%, #e0f2ff 100%);
   color: #fff;
